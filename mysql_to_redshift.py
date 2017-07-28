@@ -184,7 +184,7 @@ def parse(input_filename, output_filename, table_name, distribution_key, redshif
                     size = int(sql_type.split("(")[1].rstrip(")"))
                     red_type = "varchar(%s)" % (size * 4)
                 elif sql_type.startswith("varchar("):
-                    size = int(data.split("(")[1].split(")")[0])
+                    size = int(sql_type.split("(")[1].split(")")[0])
                     red_type = "varchar(%s)" % (size * 4)
                 elif sql_type == "longtext":
                     red_type = "varchar(max)"
