@@ -1,5 +1,3 @@
-__author__ = 'ramaraa'
-
 #!/usr/bin/env python
 
 """
